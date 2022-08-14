@@ -8,7 +8,7 @@ import javax.inject.Inject
 class MainActivityViewModel @Inject constructor(
     private val homeRepository: HomeRepository
 ): ViewModel() {
-    val nasaData = homeRepository.getNasaData()
+    val nasaData = homeRepository.getNasaData().sortedByDescending { it.date }
 
     var selectedIndex = 0
 
