@@ -10,8 +10,9 @@ import androidx.navigation.fragment.findNavController
 import com.shijas.spaceapp.R
 import com.shijas.spaceapp.databinding.FragmentNasaDetailBinding
 import com.shijas.spaceapp.presentation.main.MainActivityViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class NasaDetailFragment : Fragment(R.layout.fragment_nasa_detail) {
 
     private lateinit var binding: FragmentNasaDetailBinding

@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.shijas.spaceapp">
+<uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -15,6 +16,7 @@
         android:theme="@style/Theme.SpaceApp"
         tools:targetApi="31">
         <activity
+            android:theme="@style/Theme.App.Starting"
             android:name=".presentation.main.MainActivity"
             android:exported="true">
             <intent-filter>
