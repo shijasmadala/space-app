@@ -9,5 +9,14 @@
         android:id="@+id/homeFragment"
         android:name="com.shijas.spaceapp.presentation.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_nasaDetailFragment"
+            app:destination="@id/nasaDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nasaDetailFragment"
+        android:name="com.shijas.spaceapp.presentation.detail.NasaDetailFragment"
+        android:label="fragment_nasa_detail"
+        tools:layout="@layout/fragment_nasa_detail" />
 </navigation>
