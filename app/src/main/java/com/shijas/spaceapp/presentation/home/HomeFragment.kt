@@ -32,7 +32,7 @@ class HomeFragment : Fragment(R.layout.fragment_home),NasaItemAdapter.ClickListe
     }
 
     override fun onClick(position: Int) {
-//        mainViewModel.selectedIndex = position
-//        findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToNasaDetailFragment())
+        mainViewModel.selectedIndex = position
+        findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToNasaDetailFragment())
     }
 }
