@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_nasaDetailFragment"
-            app:destination="@id/nasaDetailFragment" />
+            app:destination="@id/nasaDetailFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/fade_in" />
     </fragment>
     <fragment
         android:id="@+id/nasaDetailFragment"
